@@ -1,14 +1,18 @@
 import React, { PureComponent } from 'react';
-import { Text } from 'react-native';
-import Container from './components/base/container.component';
+// import { Text } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Container from './components/base/Container/Container.component';
+import AppRoutes from './routes';
 // import { connect } from 'react-redux';
 
 export default class AppComponent extends PureComponent {
   render() {
     return (
-      <Container>
-        <Text>Base app</Text>
-      </Container>
+      <SafeAreaProvider>
+        <Container>
+          <AppRoutes />
+        </Container>
+      </SafeAreaProvider>
     );
   }
 }

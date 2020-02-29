@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, ViewPropTypes,StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-navigation';
-import { theme } from '../../styles/core.style';
+import { View, ViewPropTypes, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { theme } from '../../../styles/core.style';
 
 const styles = StyleSheet.create({
   safeArea: {
